@@ -23,7 +23,7 @@ public class Conexion {
     Connection conn;
     Statement stmt;
     public Conexion() throws ClassNotFoundException, SQLException{
-        String urlDatabase = "jdbc:mysql://localhost/hopital";
+        String urlDatabase = "jdbc:mysql://localhost/hospital";
         Class.forName("com.mysql.jdbc.Driver");
         conn = DriverManager.getConnection(urlDatabase, "root", "");
         stmt = conn.createStatement();
